@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css" />
+  </head>
+  <!--Preparando o formulário de contato em outro arquivo-->
+  <body>
+    <h1>Entre em Contato</h1>
+    <!--usando formsubmit para conectar o formulario com um endpoint online-->
+    <form
+      action="https://formsubmit.co/yasminkaren27@gmail.com"
+      method="POST"
+      class="form"
+    >
+    <!--Campos com nome, email, mensagem e botão. Usando classes para estilização no css-->
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="message">Mensagem</label>
+      <textarea name="message" id="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
